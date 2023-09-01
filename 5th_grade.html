@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tin học Royal" />
+  <meta property="og:description" content="Nơi chia sẻ kiến thức về Tin học!" />
+  <meta property="og:url" content="https://tinhoc-royal.github.io/" />
+  <meta property="og:image" content="https://tinhoc-royal.github.io/assets/img/favicon.png" />
+  
+  <title>Tin học Royal</title>
+  <meta content="Tin học Royal" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e05bd6509b.js" crossorigin="anonymous"></script>
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+
+</head>
+<body>
+  <!-- ======= Header/Navbar ======= -->
+  <!-- <div id="navbarBDS"> -->
+  <nav id="navbarBDS" class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html">TinHoc<span style="color: #2717F1;">Royal</span></a>
+
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Trang chủ</a>
+          </li>
+          <li>
+            <div class="dropdown active">
+              <button style="border: none; background-color: white;" class="nav-link">
+                &nbsp;Tài Liệu 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./4th_grade.html">Lớp 4</a>
+                <a href="./5th_grade.html">Lớp 5</a>
+                <a href="./6th_grade.html">Lớp 6</a>
+                <a href="./7th_grade.html">Lớp 7</a>
+                <a href="./8th_grade.html">Lớp 8</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav><!-- End Header/Navbar -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-main-content">
+        
+
+        <div class="modal-container">
+          
+          <div id="myModalContent"></div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+  <main id="main" class="main-form-real-estate-CongVu">
+    <h2 class="title-form-real-estate-CongVu">Tin Học 6 (Tin Học Quốc Tế IC3)</h2>
+    <div id="listFormRealEstate">      
+    </div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->  
+    <div class="contact-footer">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="contractInfo" class="socials-a">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tinhoc_royal_5th.js"></script>
+
+</body>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  //    var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+    document.getElementById("navbarBDS").style.display = "block";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {     
+      let currentScrollPos = window.pageYOffset;
+    
+      if (prevScrollpos < currentScrollPos && currentScrollPos > 100) {
+        document.getElementById("navbarBDS").style.display = "none";
+        prevScrollpos = currentScrollPos;
+      } else if(prevScrollpos > currentScrollPos + 100){
+        document.getElementById("navbarBDS").style.display = "block";
+        prevScrollpos = currentScrollPos;
+      }      
+    };
+
+  function checkPIN(linkFilePDF){
+    var numberPIN = prompt("Bạn hãy nhập mã xác thực: ", "");
+    if(numberPIN == "Keyboard"){
+      modalFormRender(linkFilePDF);
+    }
+    else{
+      alert("Bạn đã nhập mã xác thực không đúng!");
+    }
+  }
+
+  function modalFormRender(linkFilePDF){    
+    let screenHeight = screen.height;
+    screenHeight = screenHeight - 50;
+    htmlModalItemForm = "";
+    htmlModalItemForm = htmlModalItemForm   + "<iframe src=\""                                            
+                                            + linkFilePDF
+                                            + "\" width=\"100%\" height=\""
+                                            + String(screenHeight)
+                                            + "\">"
+                                            + "</iframe>";
+    console.log(htmlModalItemForm);
+    document.getElementById("myModalContent").innerHTML = htmlModalItemForm;
+    modal.style.display = "block";    
+    document.getElementById("navbarBDS").style.display = "none";
+  }
+
+</script>
+
+
+</html>

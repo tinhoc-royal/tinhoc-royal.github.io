@@ -52,6 +52,21 @@
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Trang chủ</a>
           </li>
+          <li>
+            <div class="dropdown">
+              <button style="border: none; background-color: white;" class="nav-link">
+                &nbsp;Tài Liệu 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./4th_grade.html">Lớp 4</a>
+                <a href="./5th_grade.html">Lớp 5</a>
+                <a href="./6th_grade.html">Lớp 6</a>
+                <a href="./7th_grade.html">Lớp 7</a>
+                <a href="./8th_grade.html">Lớp 8</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -152,7 +167,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/congvu_stem.js"></script>
+  <script src="assets/js/tinhoc_royal.js"></script>
 
   <script>
     // Get the modal
@@ -173,71 +188,74 @@
 
     function modalInfoRender(numberInfo){
       var indexInfo = numberInfo - 1;
-      var numberImagesInfo = data[indexInfo]['numberimages'];
-      var htmlModalInfoContent = "";
-      var linkYoutube = data[indexInfo]['linkyoutube'];
-      idNews = data[indexInfo]['code'];
+      window.open(data[indexInfo]['linktodo'],'_blank');
+      //window.location.href = data[indexInfo]['linktodo'];
+      // var indexInfo = numberInfo - 1;
+      // var numberImagesInfo = data[indexInfo]['numberimages'];
+      // var htmlModalInfoContent = "";
+      // var linkYoutube = data[indexInfo]['linkyoutube'];
+      // idNews = data[indexInfo]['code'];
 
      
       
-      if(data[indexInfo]['linkyoutube'] != ""){
-        htmlModalInfoContent = htmlModalInfoContent + "<div class=\"mySlides\">"
-                                                    + "<iframe width=\"100%\" height=\"100%\" src=\""
-                                                    + linkYoutube
-                                                    + "\" title=\"Video Youtube - TinHoc CongVu\""
-                                                    + "frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen>"
-                                                    + "</iframe>"
-                                                    + "</div>";
-      }
-      else{
-        htmlModalInfoContent = htmlModalInfoContent + "<div class=\"mySlides\">"
-                                                  + "<img src=\""
-                                                  + data[indexInfo]['image1']
-                                                  + "\">"                                                  
-                                                  + "</div>";
-      }
+      // if(data[indexInfo]['linkyoutube'] != ""){
+      //   htmlModalInfoContent = htmlModalInfoContent + "<div class=\"mySlides\">"
+      //                                               + "<iframe width=\"100%\" height=\"100%\" src=\""
+      //                                               + linkYoutube
+      //                                               + "\" title=\"Video Youtube - TinHoc Royal\""
+      //                                               + "frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen>"
+      //                                               + "</iframe>"
+      //                                               + "</div>";
+      // }
+      // else{
+      //   htmlModalInfoContent = htmlModalInfoContent + "<div class=\"mySlides\">"
+      //                                             + "<img src=\""
+      //                                             + data[indexInfo]['image1']
+      //                                             + "\">"                                                  
+      //                                             + "</div>";
+      // }
      
 
-      htmlModalInfoContent = htmlModalInfoContent + "<div class=\"modal-content-header\">"
+      // htmlModalInfoContent = htmlModalInfoContent + "<div class=\"modal-content-header\">"
 
-                                                  + "<h2>" + data[indexInfo]['title'] + "</h2>"
-                                                  + "<p class=\"info-item-header\">"
+      //                                             + "<h2>" + data[indexInfo]['title'] + "</h2>"
+      //                                             + "<p class=\"info-item-header\">"
                                                                                                     
-                                                  + "<span style=\"color: #4864ed;\">"
-                                                  + "<i class=\"fa-solid fa-book\"></i>&nbsp;"
-                                                  + "</span>"
+      //                                             + "<span style=\"color: #4864ed;\">"
+      //                                             + "<i class=\"fa-solid fa-book\"></i>&nbsp;"
+      //                                             + "</span>"
 
-                                                  + data[indexInfo]['subject']
+      //                                             + data[indexInfo]['subject']
 
-                                                  + "&nbsp;&nbsp;<span style=\"color: #d7b107;\">"
-                                                  + "<i class=\"fa-solid fa-medal\"></i>&nbsp;"
-                                                  + "</span>"
-                                                  + data[indexInfo]['code']
-                                                  + "&nbsp; &nbsp; &nbsp;"
+      //                                             + "&nbsp;&nbsp;<span style=\"color: #d7b107;\">"
+      //                                             + "<i class=\"fa-solid fa-medal\"></i>&nbsp;"
+      //                                             + "</span>"
+      //                                             + data[indexInfo]['code']
+      //                                             + "&nbsp; &nbsp; &nbsp;"
                                                   
-                                                  + "<button style=\"border:none;\" onclick=\"shareNews()\">"
-                                                  + "<span style=\"color: #1877F2; font-weight: bold;\">"
-                                                  + "<i class=\"fa-solid fa-square-share-nodes\"></i>&nbsp;"                                                  
-                                                  + "Chia Sẻ"
-                                                  + "</span>"
-                                                  + "</button>"
+      //                                             + "<button style=\"border:none;\" onclick=\"shareNews()\">"
+      //                                             + "<span style=\"color: #1877F2; font-weight: bold;\">"
+      //                                             + "<i class=\"fa-solid fa-square-share-nodes\"></i>&nbsp;"                                                  
+      //                                             + "Chia Sẻ"
+      //                                             + "</span>"
+      //                                             + "</button>"
 
-                                                  + "</p>"
+      //                                             + "</p>"
                                                   
 
-                                                  + "<div class=\"modal-content-info\">"
-                                                  + "<p class=\"content-description-detail\">"
-                                                  + data[indexInfo]['postcontent']
-                                                  + "</p>"                                                  
-                                                  + "</div>"
+      //                                             + "<div class=\"modal-content-info\">"
+      //                                             + "<p class=\"content-description-detail\">"
+      //                                             + data[indexInfo]['postcontent']
+      //                                             + "</p>"                                                  
+      //                                             + "</div>"
 
-                                                  + "</div>";
+      //                                             + "</div>";
       
         
-      document.getElementById("myModalContent").innerHTML = htmlModalInfoContent;
-      modal.style.display = "block";
-      showSlides(slideIndex = 1);
-      document.getElementById("navbarBDS").style.display = "none";
+      // document.getElementById("myModalContent").innerHTML = htmlModalInfoContent;
+      // modal.style.display = "block";
+      // showSlides(slideIndex = 1);
+      // document.getElementById("navbarBDS").style.display = "none";
     }
     
 
@@ -267,7 +285,7 @@
     //Get link share News
     function shareNews(){
       
-      var copyLinkShare = "https://tinhoc-congvu.github.io/index.html?id=" + idNews;
+      var copyLinkShare = "https://tinhoc-royal.github.io/index.html?id=" + idNews;
             
       // Copy link to clipboard
       navigator.clipboard.writeText(copyLinkShare);

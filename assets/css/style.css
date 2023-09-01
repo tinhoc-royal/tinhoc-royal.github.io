@@ -2972,8 +2972,9 @@ footer .credits {
 }
 
 .title-form-real-estate-CongVu{
-  color: #3d77a7;
+  color: #340adc;
   font-weight: bold;
+  text-align: center;
 }
 
 .content-form-real-estate-CongVu{
@@ -3080,4 +3081,35 @@ footer .credits {
 #btn-evaluation:hover{
   background-color: #e09304;
   border: #e09304;
+}
+
+.dropdown {
+  float: left;
+  overflow: visible;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #566eea;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
