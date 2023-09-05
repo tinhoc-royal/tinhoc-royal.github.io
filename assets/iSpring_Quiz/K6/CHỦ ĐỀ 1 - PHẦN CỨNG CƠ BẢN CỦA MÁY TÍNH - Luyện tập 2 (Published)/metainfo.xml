@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<presentation availableOffline="1" guid="C29BE653-B2B5-45C6-8ACC-9F5E87BA13ED" version="0">
+	<info>
+		<title>PHẦN CỨNG CƠ BẢN CỦA MÁY TÍNH - Luyện tập 2</title>
+		<description/>
+	</info>
+	<files index="id26" thumbnail="id22" totalSize="4517047">
+		<file id="id0">data/apple-touch-icon.png</file>
+		<file id="id1">data/audios/snd-5544a2db0cfb46cd413246b497c4221ce53e615b.mp3</file>
+		<file id="id2">data/audios/snd-dc59051ddd6ea48527c2fb098e16015257673561.mp3</file>
+		<file id="id3">data/browsersupport.js</file>
+		<file id="id4">data/favicon.ico</file>
+		<file id="id5">data/fonts/fnt0.woff</file>
+		<file id="id6">data/fonts/fnt1.woff</file>
+		<file id="id7">data/fonts/fnt2.woff</file>
+		<file id="id8">data/fonts/fnt3.woff</file>
+		<file id="id9">data/fonts/fnt4.woff</file>
+		<file id="id10">data/fonts/fnt5.woff</file>
+		<file id="id11">data/html5-unsupported.html</file>
+		<file id="id12">data/html5.png</file>
+		<file id="id13">data/images/img-1a9bcf569af1cc91e7eae43365a815b63c9c445f.jpg</file>
+		<file id="id14">data/images/img-29f2e14b94107b4fbe040a92b622c8e1b3899c2b.jpg</file>
+		<file id="id15">data/images/img-38c55ad54d2b1bc702cf2d247a8423bd90e7bdb5.gif</file>
+		<file id="id16">data/images/img-4aa2dfaead1342b5a03b8eb48a16f84260fedbc7.gif</file>
+		<file id="id17">data/images/img-605fdfa563bfdd0a4d92119e0b7f9460f528fce7.jpg</file>
+		<file id="id18">data/images/img-63a6958de320d8fd592670813e8507063f206eab.jpg</file>
+		<file id="id19">data/images/img-adc473e00a1389505e498148420acdfd0991d110.png</file>
+		<file id="id20">data/ismplayer/app_store2x.png</file>
+		<file id="id21">data/ismplayer/play.svg</file>
+		<file id="id22">data/ismplayer/preview.png</file>
+		<file id="id23">data/ismplayer/style.css</file>
+		<file id="id24">data/ismplayer/style_mini.css</file>
+		<file id="id25">data/player.js</file>
+		<file id="id26">index.html</file>
+		<file id="id27">ismplayer.html</file>
+		<file id="id28">preview.png</file>
+	</files>
+</presentation>
+
