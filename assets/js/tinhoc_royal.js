@@ -2,7 +2,7 @@ const sheetID = '1i7r1PZiPeq2UrgaRrvE1_idbM36OQ1PqdXfGcVWs3QI';
 const base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
 
 let sheetName = 'Blog';
-const qu_AllData = 'Select * WHERE A != "" AND P = "publish"';
+const qu_AllData = 'Select * WHERE A != "" AND G = "publish"';
 const queryAllData = encodeURIComponent(qu_AllData);
 const urlAllData = `${base}&sheet=${sheetName}&tq=${queryAllData}`;
 
@@ -116,7 +116,7 @@ function renderNewsByID(idNews){
 function renderHotNews(){
     dataHotNews = [];
     for(var count = dataAll.length - 1; count >= 0; count--){
-        if(dataAll[count]['hotnews'] == "Yes" && dataAll[count]['status'] == "publish"){
+        if(dataAll[count]['status'] == "publish"){
             dataHotNews.push(dataAll[count]);
         }
     }
