@@ -188,7 +188,9 @@
 
     function modalInfoRender(numberInfo){
       var indexInfo = numberInfo - 1;
-      window.open(data[indexInfo]['linktodo'],'_blank');
+      if(data[indexInfo]['linktodo'] != ""){
+        window.open(data[indexInfo]['linktodo'],'_blank');
+      }
       //window.location.href = data[indexInfo]['linktodo'];
       // var indexInfo = numberInfo - 1;
       // var numberImagesInfo = data[indexInfo]['numberimages'];
