@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<presentation availableOffline="1" guid="F7A41307-A21C-4E0A-9FDC-EBCC670B714B" version="0">
+	<info>
+		<title>PHẦN CỨNG CƠ BẢN CỦA MÁY TÍNH - Luyện tập</title>
+		<description/>
+	</info>
+	<files index="id38" thumbnail="id34" totalSize="3466591">
+		<file id="id0">data/apple-touch-icon.png</file>
+		<file id="id1">data/browsersupport.js</file>
+		<file id="id2">data/favicon.ico</file>
+		<file id="id3">data/fonts/fnt0.woff</file>
+		<file id="id4">data/fonts/fnt1.woff</file>
+		<file id="id5">data/fonts/fnt2.woff</file>
+		<file id="id6">data/fonts/fnt3.woff</file>
+		<file id="id7">data/fonts/fnt4.woff</file>
+		<file id="id8">data/fonts/fnt5.woff</file>
+		<file id="id9">data/html5-unsupported.html</file>
+		<file id="id10">data/html5.png</file>
+		<file id="id11">data/images/317b-6e7d-0627-ea62.png</file>
+		<file id="id12">data/images/b6ff-d79e-97ab-5635.png</file>
+		<file id="id13">data/images/e114-eeaf-0d64-39e2.png</file>
+		<file id="id14">data/images/f82a-6e84-0419-d6a7.png</file>
+		<file id="id15">data/images/img-07cd9e729987017646484e464eaef03ef9d92872.png</file>
+		<file id="id16">data/images/img-1a9bcf569af1cc91e7eae43365a815b63c9c445f.jpg</file>
+		<file id="id17">data/images/img-29f2e14b94107b4fbe040a92b622c8e1b3899c2b.jpg</file>
+		<file id="id18">data/images/img-56196ccad50a1466b1545ea02eff8f3dbdc2c2be.png</file>
+		<file id="id19">data/images/img-605fdfa563bfdd0a4d92119e0b7f9460f528fce7.jpg</file>
+		<file id="id20">data/images/img-63a6958de320d8fd592670813e8507063f206eab.jpg</file>
+		<file id="id21">data/images/img-6a7a0c3527fa15c5bb9a6ebdc03e2240388c9a49.jpg</file>
+		<file id="id22">data/images/img-8d237884d9682f77bf2dec20365ae6028e8f1926.jpg</file>
+		<file id="id23">data/images/img-9540a62bdd8d14d73c93a85754ab2214aca52db4.png</file>
+		<file id="id24">data/images/img-adc473e00a1389505e498148420acdfd0991d110.png</file>
+		<file id="id25">data/images/img-b32e1799c024613acdb874e73b9349fcf817bfcb.png</file>
+		<file id="id26">data/images/img-bb42381420916228fa43287b21836135e5534933.png</file>
+		<file id="id27">data/images/img-bd9950108cee525d38708da11dd2b943594196b0.jpg</file>
+		<file id="id28">data/images/img-cfe3052bdced7b8adc5aba492ac7f1d836b1edcc.png</file>
+		<file id="id29">data/images/img-cfe52acf5f5cbf354a54a024b6620cbbf74ef82f.jpg</file>
+		<file id="id30">data/images/img-d40dc75baa9f46bd0e905e19e2e9ae80df50d9b2.png</file>
+		<file id="id31">data/images/img-e755e6a9bb872952c146d587b91e60d8cd7f7234.jpg</file>
+		<file id="id32">data/ismplayer/app_store2x.png</file>
+		<file id="id33">data/ismplayer/play.svg</file>
+		<file id="id34">data/ismplayer/preview.png</file>
+		<file id="id35">data/ismplayer/style.css</file>
+		<file id="id36">data/ismplayer/style_mini.css</file>
+		<file id="id37">data/player.js</file>
+		<file id="id38">index.html</file>
+		<file id="id39">ismplayer.html</file>
+		<file id="id40">preview.png</file>
+	</files>
+</presentation>
+
