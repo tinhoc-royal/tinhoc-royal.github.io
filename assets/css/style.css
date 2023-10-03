@@ -3014,6 +3014,18 @@ footer .credits {
   border-color: #4edd8a;
 }
 
+.button-google-form{
+  background-color: #18049b;
+  color: #fff;
+  border-radius: 0.5rem;
+  border-color: #18049b;
+}
+
+.button-google-form:hover{
+  background-color: #4d38d4;
+  border-color: #4d38d4;
+}
+
 .button-PDF{
   background-color: #a10e0e;
   color: #fff;
