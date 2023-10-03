@@ -69,12 +69,22 @@ function renderToWebsite(data){
                                 + "<tr class=\"table-row-form-real-estate-CongVu\">"
                                 + "<th class=\"table-header-form-real-estate-CongVu\">STT</th>"
                                 + "<th class=\"table-header-form-real-estate-CongVu\">Bài Học</th>"
-                                + "<th class=\"table-header-form-real-estate-CongVu\">Tài Liệu</th>"
+                                + "<th class=\"table-header-form-real-estate-CongVu\">Ôn Tập</th>"
                                 + "</tr>";
-
+    var typeTodo = "";
+    var titleTodo = "";
     for(var count = 0; count < data.length; count++){
         let linkFilePDF = String(data[count]['linkpdf']);
         let linkFileWord = String(data[count]['linkword']);
+        if(data[count]['nametodo'] == "Google Form"){
+            typeTodo = "<button class=\"button-google-form\" type=\"button\">Google Form</button>";
+            titleTodo = "<span style=\"color:#9e0f0f;font-weight:bold;\">" + data[count]['title'];
+        }
+        else{
+            typeTodo = "<button class=\"button-preview\" type=\"button\">Đọc tài liệu</button>";
+            titleTodo = "<span style=\"color:black;font-weight:bold;\">" + data[count]['title'];
+        }
+
         htmlListForm = htmlListForm + "<tr "
                                     + "id=\"info" + String(count+1) + "\""
                                     + " class=\"table-row-form-real-estate-CongVu\">"
@@ -82,15 +92,15 @@ function renderToWebsite(data){
                                     + data[count]['number']
                                     + "</td>"
                                     + "<td class=\"table-data-form-real-estate-CongVu\">"
-                                    + data[count]['title']
-                                    + "</td>"
+                                    + titleTodo
+                                    + "</span></td>"
                                     + "<td class=\"table-data-form-real-estate-CongVu\" style=\"text-align:center;\">"
                                     + "<a href=\"#info" + String(count+1) + "\" onclick=\"checkPIN("
                                     + "\'"
-                                    + String(data[count]['linkpdf'])
+                                    + String(data[count]['linktodo'])
                                     + "\'"
                                     + ")\">"
-                                    + "<button class=\"button-preview\" type=\"button\">Đọc tài liệu</button>"
+                                    + typeTodo
                                     + "</a>"
 
                                     + "</td>"
