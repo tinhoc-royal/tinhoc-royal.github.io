@@ -156,14 +156,8 @@
       }      
     };
 
-  function checkPIN(linkFilePDF){
-    var numberPIN = prompt("Bạn hãy nhập mã xác thực: ", "");
-    if(numberPIN == "Computer"){
-      modalFormRender(linkFilePDF);
-    }
-    else{
-      alert("Bạn đã nhập mã xác thực không đúng!");
-    }
+  function checkPIN(linkToDo){
+  window.open(linkToDo,'_blank');
   }
   function modalFormRender(linkFilePDF){    
     let screenHeight = screen.height;
