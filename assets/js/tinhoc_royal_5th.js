@@ -2,7 +2,7 @@ const sheetID4 = '1LH_NpEsYinLgcYDKE_TAod05P7S9pD57LQrlo-I_mNw';
 const base4 = `https://docs.google.com/spreadsheets/d/${sheetID4}/gviz/tq?`;
 
 let sheetName4 = '5th';
-const qu_AllData4 = 'Select *';
+const qu_AllData4 = 'Select * WHERE E = "publish"';
 const queryAllData4 = encodeURIComponent(qu_AllData4);
 let urlAllData4 = `${base4}&sheet=${sheetName4}&tq=${queryAllData4}`;
 
@@ -89,7 +89,7 @@ function renderToWebsite(data){
                                     + "id=\"info" + String(count+1) + "\""
                                     + " class=\"table-row-form-real-estate-CongVu\">"
                                     + "<td class=\"table-data-form-real-estate-CongVu\" style=\"text-align:center;\">"
-                                    + data[count]['number']
+                                    + String(count+1)
                                     + "</td>"
                                     + "<td class=\"table-data-form-real-estate-CongVu\">"
                                     + titleTodo
