@@ -2,7 +2,7 @@ const sheetID = '1i7r1PZiPeq2UrgaRrvE1_idbM36OQ1PqdXfGcVWs3QI';
 const base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
 
 let sheetName = 'Blog';
-const qu_AllData = 'Select * WHERE A != "" AND G = "publish"';
+const qu_AllData = 'Select * WHERE F = "publish"';
 const queryAllData = encodeURIComponent(qu_AllData);
 const urlAllData = `${base}&sheet=${sheetName}&tq=${queryAllData}`;
 
